@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpamShield AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/popup.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- Animated background blobs -->
+    <div class="bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-wrap">
+        <div class="shield-icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path d="M13 2L4 6V13C4 18.55 7.84 23.74 13 25C18.16 23.74 22 18.55 22 13V6L13 2Z" fill="url(#shieldGrad)" stroke="rgba(0,255,200,0.3)" stroke-width="0.5"/>
+            <path d="M10 13.5L12 15.5L16 11" stroke="#00FFC8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="shieldGrad" x1="4" y1="2" x2="22" y2="25" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00FFC8" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#0066FF" stop-opacity="0.15"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">SpamShield</span>
+          <span class="logo-tag">AI</span>
+        </div>
+      </div>
+      <div class="status-pill" id="statusPill">
+        <span class="status-dot"></span>
+        <span class="status-label">Active</span>
+      </div>
+    </header>
+
+    <!-- Scanner Input Area -->
+    <section class="scanner-section">
+      <label class="section-label">PASTE EMAIL CONTENT</label>
+      <div class="textarea-wrap">
+        <textarea
+          id="emailInput"
+          class="email-input"
+          placeholder="Paste any suspicious email here to analyze it instantly..."
+          rows="5"
+        ></textarea>
+        <div class="char-count" id="charCount">0 chars</div>
+      </div>
+      <button class="scan-btn" id="scanBtn">
+        <span class="btn-text">Analyze Email</span>
+        <div class="btn-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 5V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="btn-loader" id="btnLoader"></div>
+      </button>
+    </section>
+
+    <!-- Result Card -->
+    <section class="result-section" id="resultSection">
+      <div class="result-card" id="resultCard">
+        <div class="result-header">
+          <div class="result-icon" id="resultIcon">
+            <!-- injected by JS -->
+          </div>
+          <div class="result-meta">
+            <div class="result-label" id="resultLabel">Analyzing...</div>
+            <div class="result-sublabel" id="resultSublabel">Processing email content</div>
+          </div>
+        </div>
+
+        <!-- Confidence Bar -->
+        <div class="confidence-wrap">
+          <div class="confidence-labels">
+            <span>Spam Confidence</span>
+            <span class="confidence-pct" id="confidencePct">0%</span>
+          </div>
+          <div class="confidence-bar-bg">
+            <div class="confidence-bar-fill" id="confidenceBarFill"></div>
+          </div>
+        </div>
+
+        <!-- Token breakdown -->
+        <div class="tokens-wrap" id="tokensWrap">
+          <div class="tokens-label">KEY SIGNALS DETECTED</div>
+          <div class="tokens-list" id="tokensList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Row -->
+    <section class="stats-section">
+      <div class="stat-card">
+        <div class="stat-value" id="statScanned">0</div>
+        <div class="stat-label">Scanned</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-card">
+        <div class="stat-value" id="statBlocked">0</div>
+        <div class="stat-label">Flagged</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-card">
+        <div class="stat-value" id="statAccuracy">98.2%</div>
+        <div class="stat-label">Accuracy</div>
+      </div>
+    </section>
+
+    <!-- Gmail Monitor Toggle -->
+    <section class="monitor-section">
+      <div class="monitor-info">
+        <div class="monitor-title">Gmail Auto-Scan</div>
+        <div class="monitor-sub">Scan incoming emails automatically</div>
+      </div>
+      <label class="toggle-switch">
+        <input type="checkbox" id="gmailToggle" />
+        <span class="toggle-slider"></span>
+      </label>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span class="footer-text">Powered by ML · Naive Bayes + TF-IDF</span>
+      <a class="footer-link" href="#" id="settingsBtn">Settings</a>
+    </footer>
+  </div>
+
+  <script src="js/popup.js"></script>
+</body>
+</html>

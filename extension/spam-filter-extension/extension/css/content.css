@@ -1,0 +1,80 @@
+/* SpamShield AI — Gmail Injection Styles */
+
+.spamshield-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'DM Mono', 'Courier New', monospace;
+  background: rgba(255, 61, 107, 0.12);
+  color: #FF3D6B;
+  border: 1px solid rgba(255, 61, 107, 0.3);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-right: 6px;
+  letter-spacing: 0.3px;
+  vertical-align: middle;
+  cursor: default;
+  transition: background 0.2s;
+}
+
+.spamshield-badge:hover {
+  background: rgba(255, 61, 107, 0.2);
+}
+
+/* Overlay for open emails */
+.spamshield-overlay {
+  position: fixed;
+  top: 20px; right: 20px;
+  z-index: 99999;
+  animation: ssSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes ssSlideIn {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.ss-overlay-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.ss-overlay-inner.spam {
+  background: rgba(20, 5, 10, 0.92);
+  border: 1px solid rgba(255, 61, 107, 0.4);
+  color: #FF3D6B;
+}
+
+.ss-overlay-inner.safe {
+  background: rgba(5, 15, 12, 0.92);
+  border: 1px solid rgba(0, 255, 200, 0.3);
+  color: #00FFC8;
+}
+
+.ss-pct {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.ss-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.6;
+  font-size: 12px;
+  padding: 0 2px;
+  line-height: 1;
+  transition: opacity 0.2s;
+}
+.ss-close:hover { opacity: 1; }
