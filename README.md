@@ -3,7 +3,7 @@
 **SpamShield AI** is a comprehensive security solution designed to protect users from phishing, spam, and malicious email content. The suite consists of a high-performance **Android Application** and a **Browser Extension**, utilizing Machine Learning and Google Cloud infrastructure for real-time threat detection.
 
 ---<p align="center">
-  <img src="Screenshot 2026-05-04 180907.png" width="500">
+  <img src="WhatsApp Image 2026-05-04 at 6.42.45 PM.jpeg" width="500">
   <br>
 
 </p>
