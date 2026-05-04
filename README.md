@@ -20,7 +20,7 @@ SpamShield AI bridges the gap between traditional email filters and modern secur
 
 2.  **Browser Extension:** A lightweight, "liquid-glass" popup for instant analysis of pasted content and an experimental **Gmail Auto-Scan** feature.
 <p align="center">
-  <img src="Screenshot 2026-05-04 180907.png" width="500">
+  <img src="Screenshot 2026-05-04 184019.png" width="500">
   <br>
 
 </p>
