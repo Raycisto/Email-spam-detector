@@ -2,15 +2,35 @@
 
 **SpamShield AI** is a comprehensive security solution designed to protect users from phishing, spam, and malicious email content. The suite consists of a high-performance **Android Application** and a **Browser Extension**, utilizing Machine Learning and Google Cloud infrastructure for real-time threat detection.
 
----
+---<p align="center">
+  <img src="Screenshot 2026-05-04 180907.png" width="500">
+  <br>
+
+</p>
 
 ## 🚀 Overview
 SpamShield AI bridges the gap between traditional email filters and modern security needs. By utilizing **Naive Bayes** and **TF-IDF** algorithms, the system analyzes email text patterns to identify suspicious behavior with high accuracy.
 
 ### The Two-Layer Protection
 1.  **Mobile App:** A full-featured dashboard for scanning inboxes, viewing risk distribution charts, and managing threat history.
-2.  **Browser Extension:** A lightweight, "liquid-glass" popup for instant analysis of pasted content and an experimental **Gmail Auto-Scan** feature.
+  <p align="center">
+  <img src="Screenshot 2026-05-04 180907.png" width="500">
+  <br>
 
+</p>
+<p align="center">
+  <img src="Screenshot 2026-05-04 180907.png" width="500">
+  <br>
+
+</p>
+
+
+2.  **Browser Extension:** A lightweight, "liquid-glass" popup for instant analysis of pasted content and an experimental **Gmail Auto-Scan** feature.
+<p align="center">
+  <img src="Screenshot 2026-05-04 180907.png" width="500">
+  <br>
+
+</p>
 ---
 
 ## ✨ Key Features
