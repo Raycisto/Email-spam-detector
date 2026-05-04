@@ -14,15 +14,8 @@ SpamShield AI bridges the gap between traditional email filters and modern secur
 ### The Two-Layer Protection
 1.  **Mobile App:** A full-featured dashboard for scanning inboxes, viewing risk distribution charts, and managing threat history.
   <p align="center">
-  <img src="Screenshot 2026-05-04 180907.png" width="500">
+  <img src="WhatsApp Image 2026-05-04 at 6.42.46 PM (1).jpeg" width="500">
   <br>
-
-</p>
-<p align="center">
-  <img src="Screenshot 2026-05-04 180907.png" width="500">
-  <br>
-
-</p>
 
 
 2.  **Browser Extension:** A lightweight, "liquid-glass" popup for instant analysis of pasted content and an experimental **Gmail Auto-Scan** feature.
